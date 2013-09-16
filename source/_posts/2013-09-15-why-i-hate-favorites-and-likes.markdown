@@ -19,4 +19,4 @@ Facebook has turned into SharePoint housing emotional metadata. And as a culture
 
 As __human beings__, we have more to be about than empty and passive FB likes and TW favorites. I am asking us, and really you, the individual reading this, to ponder how you might speak to the human soul. In my view, it's not worth speaking unless I speak to the human soul in the people I'm speaking to.
 
-Life is incredibly short, I don't want to make it any shorter.
+Life is incredibly short. I don't want to make it any shorter.
