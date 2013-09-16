@@ -3,7 +3,7 @@ layout: post
 title: "Why I hate favorites and likes"
 date: 2013-09-15 21:58
 comments: true
-categories: introspection
+categories: introspection communication
 published: true
 ---
 
