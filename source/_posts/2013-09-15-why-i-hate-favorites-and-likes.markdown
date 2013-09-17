@@ -17,7 +17,7 @@ Twitter has turned into a platform for irrelevant squawking (ie, tweeting), and 
 
 <br />
 
-Facebook has turned into SharePoint for emotional metadata. And as a culture, we've been trained to think that content on facebook has value because it comes from people we know. People we have relationships with matter, but our shared content does not. It's pictures and metadata, IE, photos of someone's puppy 4 months ago and their feelings about Tuesday's drive home. Compared to what could be expressed in relationships, Facebook content is junk mail. 'Liking' Facebook content has no affect other than telling 'like'-seeing entities you absorbed their content.
+Facebook has turned into SharePoint for emotional metadata. And as a culture, we've been trained to think that facebook content has value because it comes from people we know. People we have relationships with matter, but our shared content does not. It's pictures and metadata, IE, photos of someone's puppy 4 months ago and their feelings about Tuesday's drive home. Compared to what could be expressed in relationships, Facebook content is junk mail. 'Liking' Facebook content has no affect other than telling 'like'-seeing entities you absorbed their content.
 
 <br />
 
