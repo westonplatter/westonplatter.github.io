@@ -27,8 +27,8 @@ At the core, both 'favorites' and 'likes' are forms of __passive assent__ to the
 
 ### What's the alternative?
 
-We are intelligent __human beings__ who have more to say than passive favorites and likes. I am asking you, the individual reading this, to think and reorient how you speak to your peers and the world. Communication is worthless unless we speak to the human soul in the people we address.
+We're intelligent __human beings__ who have more to say than passive favorites and likes. I am asking you, the individual reading this, to think and reorient how you speak to your peers and the world. Communication is worthless unless we speak to the human soul in the people we address.
 
 <br />
 
-Life is already incredibly short. I'd like to have my words count for far more than passive assent.
+Life is incredibly short. I'd like to have my words count for far more than passive assent.
