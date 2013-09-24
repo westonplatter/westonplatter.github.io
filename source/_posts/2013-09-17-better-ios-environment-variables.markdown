@@ -7,7 +7,7 @@ categories: ios solutions
 published: false
 ---
 
-After crossing into iOS development after 18 months of intermediate/complex Rails work, I wanted a __extremely simple__ way to configure iOS environment variables. EG, Access the below variables based on build configuration,
+After crossing into iOS development after 18 months of intermediate/complex Rails work, I wanted a __extremely simple__ way to reference iOS app specific constants and variables. I pieced together a couple examples (listed in credits) and came up with an ARC compliant enviroment variable setup. __Feedback is extremely encouraged!__  For example,
 
     Debug:
       apiUrl:         'http://localhost:3000/api/'
@@ -24,12 +24,13 @@ After crossing into iOS development after 18 months of intermediate/complex Rail
       oauthClientId:  'OAuth 2 Client ID'
       oauthSecret:    'OAuth 2 Secret'
       
+<br>
 
-I pieced together a couple examples (see credits section) and came up with an ARC compliant Enviroment Variables setup. __Feedback encouraged.__
+### Setting this up for your project:
 
-1. add envriment on the build section.  
-- screen shot before add
-- screen shot after add
+1. Add any desired envroniments from the XCode project configs (see screenshot).
+<img src="/images/posts/better_ios_env_vars-build_create_env.png">
+
 
 2. add configuration to the plist.  
 - screen shot before add
