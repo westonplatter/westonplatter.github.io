@@ -11,8 +11,6 @@ I hate Twitter 'favorites' and Facebook 'likes'.
 
 <br />
 
-### Why I hate favorites/likes
-
 Twitter has turned into a platform for irrelevant squawking (ie, tweeting), and in an attempt keep ourselves engaged with unworthy content, we've collectively turned to 'favoriting' squawks (tweets). All a favorite really means is, 'I read your 140 characters, and it meant more to me than the 25 other 140-character segments I saw'. It's no more than a 7th grade popularity contest with your virtual peer group.
 
 <br />
