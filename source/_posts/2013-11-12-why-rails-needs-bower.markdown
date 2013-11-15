@@ -7,14 +7,20 @@ categories:
 published: false
 ---
 
-TL;DR; - We should use Bower to package JS/CSS assets, and never again create an asset centric Rails Engine.
+__Summary: We should use Bower to manage JS/CSS assets and never again create asset focused Rails Engine.__
 
-I bet you're probably thinking I'm some ultra hipster developer whose drinking his second organic wheat grass cocktail of the morning. :P. Here's the backstory and why I think Bower > Rails Engines. 
+I bet you're probably thinking I'm some ultra hipster dev who is drinking his second organic wheat grass shake of the morning. :P. Here's the back story and why I think Bower is superior to Rails Engines. 
 
-During the Rails 3.2.x era, I spent 3 months transforming a Rails 2.0 plugin  into a Rails Engine ([github repo here](https://github.com/CruGlobal/qe)). Rails Engines allowed you to package javascript, css, and images in the Rails Engine itself and then reference those assets in the main Rails you brought the Engine into. Many prominent Rails Engines (devicse, spree, backbone-rails) loaded assets in the engines just in case the developer wanted to stick to original theme. At the time, I loved it. And specifically related to the Rails Engine I worked on, included assets was a great solution for building out the organization's 10 or so apps that had identical stlying . At the time, including assets in Engines was the right tool for the job.
+During the Rails 3.2.x era, I spent 3 months transforming a Rails 2 plugin  into a Rails Engine ([github repo here](https://github.com/CruGlobal/qe)). In additional to packaging Rails MVC components, Engines allow you to include javascript, css, and images. This is really handy since you can then reference and extend these js/css/images in the Main Rails App. Many prominent Rails Engines (devise, spree, backbone-rails) use this package setup to pull their required assets. From a generalist's perspective, I loved it. I could pull in SOA Rails components, complete a feature, and also borrow any elegant frontend styling. Related to the Rails Engine I worked on, defining the assets in the Rails Engine was the best solution at the time.
 
-Fast forward 17 months. Amidst Rails 4 and NoSQL becoming normal, Javascript frameworks have become effective tools for building out web and device products. __Translated more accurately, Javascript frameworks are no longer a hipster thing.__ Or maybe I'm the person whoose late to join the Javascript framework homebrew party. 
+But Rails Engines were also frustration on 2 main fonts:  
+1. Rails engines relied on different `jquery-rails` versions. 
+2. Only the popular Frontend Tooling had Rails Engine gems, and it wasn't "dead simple" for frontend devs "engininze".
 
-I was introduced to Javascript as a confusing a unimportant tool for DOM manipulation. I often worked 2-3x as hard to make features work in the calmness of Ruby's simple and non-async server side environment. The biggest frustration is that I didn't understand Javscript's structure or developer conventions seems non-existent. [@splars](https://twitter.com/splars) and [@alanschoenburg](https://twitter.com/alanschoenburg) introduced me to jQuery plguins, but I still thought Javascript was fragmented since depdendencies were unknown and most middle tier projects never pushed for testing.
+__Side question:__ You might ask, "Why did you want asset files in an Engine? All you need is the js/css/images in the assets folder and you're good." From a technical perspective, yes, copy and pasting the assets into your app works, but the mere existence of these files does not explain their purpose or what other asset files may depend on them. This becomes deadly for a 10 person dev team. Unexplained architectural decisions create enormous technical debt.
 
+Fast forward 17 months. Javascript frameworks have become effective tools for building rich UIs. __Translated more accurately, Javascript frameworks are no longer just a hipster thing.__ Or maybe I'm the person who's late to the Javascript framework homebrew party. Probably a little of both.
 
+The result, we're adding even more javascript and css to our Rails apps with more stringent dependencies. 
+
+The good thing is this is exactly where Bower excels. It handles Javascript and CSS dependencies like a boss. The only transition we need to make is package the rails' portions of jquery-rails and turbolinks into a Bower packages and add bower_components to the asset compilation path. But more importantly, we need to be embrace multi-dimensional dependency management with open arms.
