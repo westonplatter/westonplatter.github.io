@@ -4,6 +4,7 @@ title: "How to setup Bower within Rails"
 date: 2013-12-28 19:21
 comments: true
 categories: 
+published: false
 ---
 
 After arguing for a Bower/Rails integration in [Why Rails needs Bower](/blog/2013/why-rails-needs-bower/), I want to show how Bower can be integrated within Rails.
