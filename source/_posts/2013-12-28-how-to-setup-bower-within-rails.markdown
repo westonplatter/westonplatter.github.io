@@ -177,7 +177,7 @@ Remove the `@font-face` declaration from the `bootstrap.css` file in `vendor/ass
 -
 ```
 
-This will stop the HTTP 404s during page loads, but I find this unsatisfactory because `bower-installer` will copy over the original `bootstrap.css` file every time it's run. The reason why I still advocate for this option is that it stops the HTTP 404s since you removed the @font-face code that created them. I believe HTTP 404s should never, __never__ show up in production code.```
+This will stop the HTTP 404s during page loads, but I find this unsatisfactory because `bower-installer` will copy over the original `bootstrap.css` file every time it's run. I still advocate for this since it stops the HTTP 404s. I believe HTTP 404s should never, __never__ show up in production.
 
 
 ## Please provide feedback
