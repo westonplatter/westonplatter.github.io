@@ -9,7 +9,9 @@ published: true
 
 Part 1 of 2.
 
-__Summary: The rails stack should use Bower to manage JS/CSS assets and stop packaging assets in Rails Engines.__
+__Summary__: The rails stack should use Bower to manage JS/CSS assets and stop packaging assets in Rails Engines.
+
+<!--more-->
 
 I bet you're probably thinking I'm some ultra hipster dev who is drinking his second organic wheat grass shake of the morning. :P. Here's the back story and why I think Bower is superior to Rails Engines. 
 
