@@ -4,12 +4,12 @@ title: "How to setup Bower within Rails"
 date: 2013-12-28 19:21
 comments: true
 categories: rails tools
-published: false
+published: true
 ---
 
 After arguing for a Bower/Rails integration in [Why Rails needs Bower](/blog/2013/why-rails-needs-bower/), I want to show how Bower can be integrated within Rails.
 
-The objective is for all JS/CSS tooling and libraries to be manageed by Bower while still holding to a standard Rails MVC.  In other words, we'll still use Rails to render the view templates rather than moving to a Rails-API/Javascript templated frontend. All we're doing is using Bower to govern the CSS and JS dependencies.
+The objective is for all JS/CSS tooling and libraries to be managed by Bower while still holding to a standard Rails MVC.  In other words, we'll still use Rails to render the view templates rather than moving to a Rails-API/Javascript templated frontend. All we're doing is using Bower to govern the CSS and JS dependencies.
 
 [Example Rails app on Github](https://github.com/westonplatter/example_rails_bower)
 
@@ -74,7 +74,7 @@ Install `bower-installer` and save as development dependency,
 npm install --save-dev bower-installer
 ```
     
-Modify the `bower.json` according to `bower-installer` [README](https://github.com/blittle/bower-installer#bower-installer) telling `bower-installer` to install the js, css, and random font files into the vendor assets directory. Since Rails by default does not pickup the `vendor/assets/fonts` dirctory, we'll add this to the Rails asset path too.
+Modify the `bower.json` according to `bower-installer` [README](https://github.com/blittle/bower-installer#bower-installer) telling `bower-installer` to install the js, css, and random font files into the vendor assets directory. Since Rails by default does not pickup the `vendor/assets/fonts` directory, we'll add this to the Rails asset path too.
 ```diff
 // =========== bower.json
 
@@ -143,7 +143,7 @@ Modify the `application.js` and `application.css` files to reflect changes and b
 
 Boot up rails and test this up by going to, [localhost:3000/home/index](http://localhost:3000/home/index).
 
-We have an issue. The Bootstrap font-face is not coming through since we do not see a world image. And if you look in the Javacript console, you're see the we have 3 HTTP 404s. Why? [`Bootstrap v3.0.3 bootstrap.css#LL2356`](https://github.com/twbs/bootstrap/blob/1c83d68ca45adce77d8eca9bb5643db7b57b9ef7/dist/css/bootstrap.css#L2356-L2361) expects fonts to be available at `../fonts` but Rails makes this available at `/assets`. :disappointed:
+We have an issue. The Bootstrap font-face is not coming through since we do not see a world image. And if you look in the Javascript console, you're see the we have 3 HTTP 404s. Why? [`Bootstrap v3.0.3 bootstrap.css#LL2356`](https://github.com/twbs/bootstrap/blob/1c83d68ca45adce77d8eca9bb5643db7b57b9ef7/dist/css/bootstrap.css#L2356-L2361) expects fonts to be available at `../fonts` but Rails makes this available at `/assets`. :disappointed:
 
 
 ### 6. Fix the font-face issue.
@@ -177,9 +177,9 @@ Remove the `@font-face` declaration from the `bootstrap.css` file in `vendor/ass
 -
 ```
 
-This will stop the HTTP 404s during page loads, but I find this unsatisfactory because `bower-installer` will copy over the original `bootstrap.css` file everytime it's run. The reason why I still advocate for this option is that it stops the HTTP 404s since you removed the @font-face code that created them. I believe HTTP 404s should never, __never__ show up in production code.```
+This will stop the HTTP 404s during page loads, but I find this unsatisfactory because `bower-installer` will copy over the original `bootstrap.css` file every time it's run. The reason why I still advocate for this option is that it stops the HTTP 404s since you removed the @font-face code that created them. I believe HTTP 404s should never, __never__ show up in production code.```
 
 
 ## Please provide feedback
 
-I'm hopeful that we embrace better tools to wholistically manage frontend dependencies so we can create a more beautiful UIs. __Go forth and conquer__.
+I'm hopeful that we embrace better tools to holistically manage frontend dependencies so we focus on creating beautiful UIs.
