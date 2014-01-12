@@ -30,11 +30,11 @@ After crossing into iOS development after 18 months of intermediate/complex Rail
 
 1. Add any desired envroniments from the XCode project configs (see screenshot).
 <img src="/images/posts/better_ios_env_vars-build_create_env.png">
-
+  
 
 2. add configuration to the plist.  
-- screen shot before add
-- screen shot after add
+screen shot before add  
+screen shot after add  
 
 3. create env.plist  
 https://gist.github.com/westonplatter/6445784#file-env-plist
