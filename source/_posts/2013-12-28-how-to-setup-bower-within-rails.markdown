@@ -15,6 +15,7 @@ The objective is for all JS/CSS tooling and libraries to be managed by Bower whi
 
 [Commits](https://github.com/westonplatter/example_rails_bower/commits/master)
 
+<!--more-->
 
 ### 1. Create a new Rails and Controller/View
 
