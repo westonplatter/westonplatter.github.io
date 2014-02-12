@@ -16,3 +16,13 @@ What is the difference between binding to,
 - 192.168.0.0
 
 How does this interact with `iptables` and `ufw` systems?
+
+
+#### random notes
+
+Conection refused - can mean many things.
+- sending service
+- sending context
+- middle context
+- endpoint context
+- endpoint service
