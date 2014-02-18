@@ -21,8 +21,8 @@ This got me thinking about how I best digest information when someone isn't teac
 
 Here's my answer. Maybe this helps you derive your own process, maybe not.
 
-1) compare topic to already known concepts
-2) create a visual illustration
-3) create state based flow
+1) compare topic to already known concepts  
+2) create a visual illustration  
+3) create state based flow  
 
 First, I start by comparing new concepts with other ideas and hopefully make an anaology. If I can get the digestion process into an analyically comparative operation I'm 3x more effective than if I'm straight up leanring new material. Second, I take the simpler aspects of the new concept and create a visual illustation. Again, I'm 3x more effective with knowledge if I have create a visual representation. Up until now, all the knowledge and understanding I've process is devoid of state or order based dependencies. Third step is to introduce an order list of how the new concept can be explained by building the concept from no previous knoledge. 
