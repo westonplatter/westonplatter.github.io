@@ -4,6 +4,7 @@ title: "What I learned from building a product focused Twitter following"
 date: 2014-08-11 00:16:58 -0600
 comments: true
 categories: content marketing anti-dev
+published: false
 ---
 
 Tried failing in the opposite direction.
