@@ -9,6 +9,8 @@ published: true
 
 I'm pulling an all nighter preparing to teach an "Intro to Servers" class with Girl Develop IT - Boulder. 
 
+<!--more-->
+
 I thought the class would be boringly straight forward. Describe HTTP request/response cycle, setup SSH authentication, install and setup NGINX for static HTML site and simple nodejs reverse proxy. I was completely wrong. 
 
 I realized my complex objective when I had to draw simple diagrams for technical concpets I took for granted (eg, SSH handshake). It turns out SSH has 3 transport layers and the 3rd layer has 3 embedded channels. If you're like me and started your "programming" after the rise and fall of the first internet age, I lived on top of very helpful developer tools. I was told to accept SSH and write code faster.
