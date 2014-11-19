@@ -4,6 +4,7 @@ title: "Highschool's lasting impact"
 date: 2014-11-19 01:30:19 -0700
 comments: true
 categories: 
+published: false
 ---
 
 The actual experience of going into the building.
