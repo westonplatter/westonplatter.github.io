@@ -7,7 +7,11 @@ categories: business
 published: true
 ---
 
-In startup culture there's an emphasis on doing things __fast__. Build fast, get feedback fast, iterate fast, and thus beat the competition because you refined your product faster than anyone else. That's an ultra short version of [the LEAN Startup](http://www.amazon.com/dp/0307887898).
+You have to learn what's worth producing, not produce more faster.
+
+<!--more-->
+
+In startup culture there's an emphasis on doing things __fast__. Build fast, get feedback fast, iterate fast, and thus beat the competition because you learned what customer's found valuable in your product faster than competitors. That's an ultra short version of [the LEAN Startup](http://www.amazon.com/dp/0307887898).
 
 But faster isn't always better. Producing more software products faster does not mean you're creating more value. Why? You have to [make something customers actually want](http://www.paulgraham.com/start.html). The real challenge is defining what people want, not writing more code.
 
