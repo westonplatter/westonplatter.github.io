@@ -9,6 +9,8 @@ published: true
 
 I'm on a 2 minute "get crap done" kick.
 
+<!-- more -->
+
 It started when I realized how much time I spend in transition at home.
 EG, transition between getting home from work and leaving for a mountain trail run.
 Do I really need to sit at my desk and browse the internet for 6 minutes.

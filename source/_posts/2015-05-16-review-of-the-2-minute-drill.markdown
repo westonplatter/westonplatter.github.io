@@ -3,7 +3,7 @@ layout: post
 title: "Review of the 2 minute drill"
 date: 2015-05-27 22:03:58 -0600
 comments: true
-categories: 
+categories: life hacking
 published: true
 ---
 
