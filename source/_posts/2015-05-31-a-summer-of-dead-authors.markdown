@@ -13,8 +13,10 @@ tech sphere. I think my current feeling is what people experience
 before they push themselves into burn out.
 
 I'm throttling back and spending part of my summer nights reading
-dead authors to see beyond current and small context to stand on
-the shoulders of giants.
+dead authors to pull in fresh perspective.
+
+Why read dead authors to get fresh perspective? That's a longer
+conversation for another time - but very worthwhile.
 
 I have a back porch ([picture](https://instagram.com/p/3VPixrnBOh/?taken-by=westonplatter))
 that's majestic after dusk. I'm starting with "If-" and other
