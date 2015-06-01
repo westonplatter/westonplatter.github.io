@@ -7,7 +7,9 @@ categories: life hacking
 published: true
 ---
 
-TLDR; It's hard to do things in 2 minute intervals.
+It's hard to do things in 2 minute intervals.
+
+<!-- more --->
 
 A month ago, I shared my thoughts on trying to segment everyday
 tasks into executable 2 minute tasks. The goal was to get past
