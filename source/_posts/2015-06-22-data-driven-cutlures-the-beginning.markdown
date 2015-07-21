@@ -11,16 +11,26 @@ HEADS UP - this is a quick post written for my own sake (less for those
 reading). I want to remember my initial perspective on creating
 effective data driven communities.
 
-ecosystems
-- full time work
-- micro lending analysis
-- nyc team
-- writing
+I invest my professional efforts in 3 specific data driven ecosystems,
+- full time job at a micro lending company in Boulder.  
+- side project trading micro loans on one of the Peer to Peer platforms.  
+- community/non-profit project with 2 people from NYC.  
 
-Places where I'm weak
-Small / Significant wins
-How do I invest in others
-Who am I listening to? Where am I learning?
+As I invest, I see clearly that it's hard to build a data driven
+culture. Each team member needs to be intellectually
+discplined responding in accoardance to measured
+values rather than gut reactions. In other words,
+people have to exercise discernment based on external defined facts.
 
-Core philosophy - engineer data science ops to catayltically enable
-others.
+Couple notes for my own sake:
+
+#### Places where I'm weak
+- asking why before I start doing work  
+- thinking small before I think big  
+
+#### Small / Significant wins
+- collocating data  
+- enabling non-technical users with a data exploration tool  
+
+#### Core philosophy
+Engineer data science ops to catayltically enable others.
