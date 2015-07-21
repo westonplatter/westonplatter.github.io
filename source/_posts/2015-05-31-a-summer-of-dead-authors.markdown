@@ -7,6 +7,10 @@ categories: sunday reflection
 published: true
 ---
 
+I started reading dead authors to get better perspective on life.
+
+<!-- more -->
+
 It's Sunday evening. I'm reflecting on my last week & the upcoming
 week. I'm hungry for a rich perspective on life outside of the
 tech sphere. I think my current feeling is what people experience
