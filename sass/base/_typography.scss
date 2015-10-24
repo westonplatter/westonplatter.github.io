@@ -16,7 +16,7 @@ $header-subtitle-font-family: $serif !default;
 .mono { font-family: $mono; }
 
 body > header h1 {
-  font-size: 2.2em;
+  font-size: 2.0em;
   @extend .heading;
   font-family: $header-title-font-family;
   font-weight: normal;
@@ -34,7 +34,7 @@ body {
   font-size: 1em;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 2.0em;
   line-height: 1.2em;
 }
 
@@ -114,7 +114,7 @@ article blockquote {
   $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
   padding-left: 1em;
   border-left: 4px solid rgba($text-color-light, .5);
