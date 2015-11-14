@@ -9,13 +9,13 @@ published: true
 
 After arguing for a Bower/Rails integration in [Why Rails needs Bower](/blog/2013/why-rails-needs-bower/), I want to show how Bower can be integrated within Rails.
 
-The objective is for all JS/CSS tooling and libraries to be managed by Bower while still holding to a standard Rails MVC.  In other words, we'll still use Rails to render the view templates rather than moving to a Rails-API/Javascript templated frontend. All we're doing is using Bower to govern the CSS and JS dependencies.
-
 [Example Rails app on Github](https://github.com/westonplatter/example_rails_bower)
 
 [Commits](https://github.com/westonplatter/example_rails_bower/commits/master)
 
 <!--more-->
+
+The objective is for all JS/CSS tooling and libraries to be managed by Bower while still holding to a standard Rails MVC.  In other words, we'll still use Rails to render the view templates rather than moving to a Rails-API/Javascript templated frontend. All we're doing is using Bower to govern the CSS and JS dependencies.
 
 ### 1. Create a new Rails and Controller/View
 
