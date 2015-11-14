@@ -14,7 +14,7 @@ I had the option of statically defining a R variable and loading the
 corresponding CSV file into it. For example,
 
 {% highlight r %}
-temperature <- read.csv('./data_files/temperature.csv')
+temperature <- read.csv("./data_files/temperature.csv")
 {% endhighlight %}
 
 This isn't pragmatic since we have to update variable and filename
@@ -24,7 +24,7 @@ into dynamically assigned variable names. For example,
 
 {% highlight r %} 
 # get all files in the data_files directory
-csv_files <- Sys.glob("data_files/*.csv")
+csv_files <- Sys.glob("./data_files/*.csv")
 
 # loop over files
 for (file in csv_files) {
