@@ -6,11 +6,14 @@ comments: true
 categories: life reading
 ---
 
-I used to prepare for each high school morning visually scanning
-Kipling's famous poem, "If-". I wish I would have drawn deeper
-wisdom from it at a younger age. But, hindsight is 20/20 and the
-present is the best time to instill habits I wish were already
-established.
+I used to prepare each high school morning by visually scanning Kipling's
+famous poem, "If-".
+
+<!-- more -->
+
+I wish I would have take the poem to heart at an earlier
+age. But, hindsight is 20/20 and the present is the best time to instill
+habits I wish were already present.
 
 {% blockquote Kipling http://www.poetryfoundation.org/poem/175772 If- %}
 If you can keep your head when all about you   
@@ -66,5 +69,6 @@ extended family, it felt like she saw who I was, heard me, and valued
 me; I always believed she loved me. I also never remember her acting out
 of spite or a degenerate heart. I think her ever-present love for people
 and her persevering charisma are intimately linked. She was free to love
-people deeply because she feared nothing life brought her way. We
-celebrated the end of her full life in April 2015.
+people deeply because she feared nothing life brought her way. I want to
+be the same strong figure for others that she was for me.
+
