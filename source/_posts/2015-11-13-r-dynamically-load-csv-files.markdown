@@ -7,7 +7,11 @@ categories: r data-science
 ---
 
 I'm creating a set of visualizations using R/RStudio, and I need to load
-a handful of CSV files into R as `data.frame`s. The hurdle I overcame
+a handful of CSV files into R as `data.frame` s. 
+
+<!-- more -->
+
+The hurdle I overcame
 was the question of how to easily and sustainably load the data into R.
 
 I had the option of statically defining a R variable and loading the
