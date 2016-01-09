@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Intro to Casual Inference"
+title: "Casual Inference Reading"
 date: 2016-01-08 16:04:53 -0700
 comments: true
 categories: data statistics
