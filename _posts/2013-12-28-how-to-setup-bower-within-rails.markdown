@@ -2,12 +2,12 @@
 layout: post
 title: "How to setup Bower within Rails"
 date: 2013-12-28 19:21
-comments: true
-categories: rails tools
-published: true
+tags:
+- rails
+- tools
 ---
 
-After arguing for a Bower/Rails integration in [Why Rails needs Bower](/blog/2013/why-rails-needs-bower/), I want to show how Bower can be integrated within Rails.
+After arguing for a Bower/Rails integration in [Why Rails needs Bower](/why-rails-needs-bower/), I want to show how Bower can be integrated within Rails.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ The objective is for all JS/CSS tooling and libraries to be managed by Bower whi
 Create a new Rails app with a controller and view to test that JS/CSS files are properly included.
 ```sh
 rails new simple
-cd simple 
+cd simple
 rails generate controller home index
 ```
 
@@ -30,35 +30,35 @@ Add this in `simple/app/views/home/index.html.erb` view to test that Bootstrap i
 ```html
 <h1>Hello, <span class="glyphicon glyphicon-globe"></span> !</h1>
 ```
-    
+
 
 ### 2. Setup Bower
 
 Install node if you haven't already. Joynet has [great NodeJS install instructions](https://github.com/joyent/node/wiki/installation).
 
-Use NPM to setup `package.json`.     
+Use NPM to setup `package.json`.
 ```sh
 npm init
 ```
-    
+
 Install Bower, save as a development dependency. I chose to ignore the `node_modules` directory, but you can decide that for yourself.
 ```sh
 npm install --save-dev bower
 ```
-    
-User bower to setup the `bower.json`.    
+
+User bower to setup the `bower.json`.
 ```sh
 bower init
 ```
-    
-By default, Bower installs packages into `simple/app/bower_components`.  In my opinion, it simplifies the codebase to install Bower components in the root directory, `simple/bower_modules`. We'll have Bower install components there by adding a `.bowerrc` file.    
+
+By default, Bower installs packages into `simple/app/bower_components`.  In my opinion, it simplifies the codebase to install Bower components in the root directory, `simple/bower_modules`. We'll have Bower install components there by adding a `.bowerrc` file.
 ```json
 {
   "directory": "bower_components"
 }
 ```
 
-Instruct Bower to to install `jQuery`, `jquery-ujs`, and `bootstrap`.    
+Instruct Bower to to install `jQuery`, `jquery-ujs`, and `bootstrap`.
 ```sh
 bower install --save jquery jquery-ujs bootstrap
 ```
@@ -70,11 +70,11 @@ Looking in `simple/bower_components` reveals that Bower installed all of [jquery
 
 We can use [bower-installer](https://github.com/blittle/bower-installer) to copy specific files from `simple/bower_components` into the `simple/vendor/assets` folder for them to be included during the Rails' AssetPipeline compilation process.
 
-Install `bower-installer` and save as development dependency,    
+Install `bower-installer` and save as development dependency,
 ```sh
 npm install --save-dev bower-installer
 ```
-    
+
 Modify the `bower.json` according to `bower-installer` [README](https://github.com/blittle/bower-installer#bower-installer) telling `bower-installer` to install the js, css, and random font files into the vendor assets directory. Since Rails by default does not pickup the `vendor/assets/fonts` directory, we'll add this to the Rails asset path too.
 ```diff
 // =========== bower.json
@@ -101,11 +101,11 @@ Modify the `bower.json` according to `bower-installer` [README](https://github.c
 
 module Simple
   class Application < Rails::Application
-    
+
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-+    
++
 +    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
   end
 end
@@ -115,12 +115,12 @@ Run bower-installer. You should see the asset source files appear in the vendor 
 ```sh
 bower-installer
 ```
-    
+
 ### 4. Modify Gemfile and application.js files
 Remove jquery-rails and jquery-ujs from the Gemfile. Run `bundle install`.
-    
+
 Modify the `application.js` and `application.css` files to reflect changes and bootstrap inclusion. __Notice that the javascript file associated with `jquery-ujs ` is actually named `rails.js`.__
-```diff 
+```diff
 // ========== application.js
 
 //= require jquery
@@ -152,21 +152,21 @@ We have an issue. The Bootstrap font-face is not coming through since we do not 
 My solution resolves the HTTP 404s, but I'm content nor happy with it. I'd love to hear how others have conquered this issue and update this post with a better solution. Here's what I'm doing to fix the HTTP 404s.
 
 Add `@font-face` declaration in the application.css file and substitute `../fonts` for `/assets` since this is how the Rails Asset Pipeline makes them available.
-```diff    
+```diff
 // ========== application.css
 
 +
 + @font-face {
 +  font-family: 'Glyphicons Halflings';
 +  src: url('/assets/glyphicons-halflings-regular.eot');
-+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-+    url('/assets/glyphicons-halflings-regular.woff') format('woff'), 
-+    url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), 
++  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
++    url('/assets/glyphicons-halflings-regular.woff') format('woff'),
++    url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
 +    url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 +}
 ```
 
-Remove the `@font-face` declaration from the `bootstrap.css` file in `vendor/assets/stylesheets`. 
+Remove the `@font-face` declaration from the `bootstrap.css` file in `vendor/assets/stylesheets`.
 ```diff
 // ========== bootstrap.css
 

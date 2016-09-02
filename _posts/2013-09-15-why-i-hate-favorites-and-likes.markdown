@@ -2,9 +2,9 @@
 layout: post
 title: "Why I hate favorites and likes"
 date: 2013-09-15 21:58
-comments: true
-categories: introspection communication
-published: true
+tags:
+- reflection
+- communication
 ---
 
 I hate Twitter 'favorites' and Facebook 'likes'.

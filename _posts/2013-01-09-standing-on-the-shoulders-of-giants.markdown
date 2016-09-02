@@ -2,9 +2,8 @@
 layout: post
 title: "Standing on the Shoulders of Giants"
 date: 2013-01-09 06:44
-comments: true
-categories: introspection
-published: true
+tags:
+- reflection
 ---
 
 "If I have seen further it is by standing on ye sholders of Giants." - Isaac Newton

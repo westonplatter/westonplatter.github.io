@@ -2,9 +2,8 @@
 layout: post
 title: "Faster is not a business plan"
 date: 2014-10-07 12:29:23 -0600
-comments: true
-categories: business
-published: true
+tags:
+- business
 ---
 
 You have to learn what's worth producing, not produce more faster.

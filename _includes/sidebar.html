@@ -1,15 +1,22 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+
+      <div>
+        <img src="/assets/weston.jpg" class="responsive hide-mobile">
+      </div>
+
       <h2>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h2>
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead">
+        freelance data scientist/engineer
+      </p>
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav hide-mobile">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}
@@ -30,6 +37,6 @@
       <a class="sidebar-nav-item" href="{{ site.twitter.profile }}">Twitter</a>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p class="hide-mobile">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>

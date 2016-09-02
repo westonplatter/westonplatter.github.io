@@ -2,8 +2,8 @@
 layout: post
 title: "Stopping and Switching"
 date: 2013-07-31 00:19
-comments: true
-categories: introspection
+tags:
+- reflection
 ---
 
 I set [lofty goals](/blog/2013/2012-in-review#goals) in January, and like many of you, I've gone after some goals, and nearly forgotten about half of them. [These](/blog/2013/2012-in-review#goals) were not the typical new year's resolution goals. [They](/blog/2013/2012-in-review#goals) did not include "workout", "spend more time with friends", etc.

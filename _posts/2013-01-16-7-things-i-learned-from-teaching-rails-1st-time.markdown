@@ -2,8 +2,8 @@
 layout: post
 title: "7 things I learned from throwing a Rails Bootcamp"
 date: 2013-01-16 21:23
-comments: true
-categories: teaching
+tags:
+- teaching
 ---
 
 Last week I threw an Intro to Ruby + Rails Bootcamp ([event info](http://elasticbackflip.com/blog/2012/12/12/rails-bootcamp-ruby-basics-and-scaffolding/)). I specifically wanted it to be a "no programming experience required" event that would explain the essential Ruby + Rails basics in 7 hours. Here's what I learned.
@@ -31,12 +31,12 @@ I planned for 12 hours of slide prep and it took 25 hours. I learned I am 3-4x t
 7. __Success = organize info + execute on details__.
 Hosting the event was chaining together a hundred little baby steps from different contexts. Overall, I tried to keep event details in systems and not in my head so I could easily knock out small tasks.
 
-The following tools helped,  
--- email = communicate with people about details  
--- google docs = schedule + confirmed event details  
--- trello = helped me brainstorm content  
--- pen and paper = helped me create slides  
--- jekyll_and_hyde = how I did event slides  
---  EventBrite = event registration  
+The following tools helped,
+-- email = communicate with people about details
+-- google docs = schedule + confirmed event details
+-- trello = helped me brainstorm content
+-- pen and paper = helped me create slides
+-- jekyll_and_hyde = how I did event slides
+--  EventBrite = event registration
 
 

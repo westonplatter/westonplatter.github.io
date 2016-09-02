@@ -3,19 +3,39 @@ layout: default
 title: Home
 ---
 
+<div class="intro">
+
+  <h3>welcome and thanks</h3>
+  <p>
+  Welcome to my little page on the internet; thanks for visiting. I write
+  weekly as I rangle through thoughts & ideas I'm processing. That said, take
+  everything written here with a grain of salt.</p>
+
+  <h3>freelance data scientist/engineer</h3>
+  <p>
+    I help small and medium sized companies <u><b>implement data focused
+    solutions</b></u>. If you're looking for high level guidance or technical
+    engineering help, I'm reachable via email, westonplatter (at) gmail.</p>
+</div>
+
+<hr>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h2 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    <div>{{ post.excerpt }}</div>
-    <div>
+    <div style="float: left">
+      <h4 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h4>
+    </div>
+
+    <div style="float: right;">
       <span class="post-date">{{ post.date | date_to_string }}</span>
     </div>
 
+    <div style="clear: both;"></div>
   </div>
   {% endfor %}
 </div>

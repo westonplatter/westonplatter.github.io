@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            'westonplatter'
 tagline:          'data. analytics. software'
-description:      ''
+description:      'freelance data scientist/engineer'
 url:              http://westonplatter.com
 baseurl:          /
 
@@ -25,4 +25,7 @@ github:
 twitter:
   profile: https://twitter.com/westonplatter
 
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+
+excerpt_separator: <!--more-->

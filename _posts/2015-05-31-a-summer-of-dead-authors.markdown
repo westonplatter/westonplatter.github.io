@@ -3,13 +3,13 @@ layout: post
 title: "A Summer of Dead Authors"
 date: 2015-05-31 21:46:53 -0600
 comments: true
-categories: sunday reflection
-published: true
+tags:
+- reflection
 ---
 
 I started reading dead authors to get better perspective on life.
 
-<!-- more -->
+<!--more-->
 
 It's Sunday evening. I'm reflecting on my last week & the upcoming
 week. I'm hungry for a rich perspective on life outside of the

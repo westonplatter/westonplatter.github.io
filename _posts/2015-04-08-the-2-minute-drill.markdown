@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "The 2 minute drill"
+title: "the 2 minute drill"
 date: 2015-04-08 21:13:39 -0600
-comments: true
-categories: life hacking
-published: true
+tags:
+- life
+- hacking
 ---
 
 I'm on a 2 minute "get crap done" kick.
 
-<!-- more -->
+<!--more-->
 
 It started when I realized how much time I spend in transition at home.
 EG, transition between getting home from work and leaving for a mountain trail run.

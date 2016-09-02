@@ -2,9 +2,9 @@
 layout: post
 title: "Testing Multiple Rubies and Databases on Travis CI"
 date: 2013-03-21 02:06
-comments: true
-categories: testing rails
-published: true
+tags:
+- rails
+- testing
 ---
 
 [Why should I test multiple versions & databases](/blog/2013/testing-multiple-rubies-and-databases#why)

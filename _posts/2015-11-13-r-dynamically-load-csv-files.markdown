@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "R - Dynamically Load CSV Files"
+title: "Data science: R meta programing"
 date: 2015-11-13 22:54:45 -0700
 comments: true
-categories: r data-science
+tags:
+- r
+- data-science
 ---
 
 Load CSV files into dynamically named `dataframe` objects
+
+<!--more-->
 
 I had the option of statically defining a R variable and loading the
 corresponding CSV file into it. For example,

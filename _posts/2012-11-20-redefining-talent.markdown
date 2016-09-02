@@ -2,15 +2,14 @@
 layout: post
 title: "Redefining Talent"
 date: 2012-11-20 20:53
-comments: true
-categories: introspection
-published: true
+tags:
+- reflection
 ---
 
 I believe we have culturally forgotten the true nature of **talent**. It seems talent is measured by how many tasks can be accomplished within a constrained set of resources. The impact of this dicatomony is a disorted view of talent.
 
 #### How work gets done
-Accomplishing a task is the result of first understanding the nature of the task. Next, a person must derive and execute an approach specific to their perception of the problem. Some approaches will be unsuccessful, and thus will require multiple approach derivations. Once a given or set of approaches are successful, the task is accomplished. 
+Accomplishing a task is the result of first understanding the nature of the task. Next, a person must derive and execute an approach specific to their perception of the problem. Some approaches will be unsuccessful, and thus will require multiple approach derivations. Once a given or set of approaches are successful, the task is accomplished.
 
 We'll term this the **solution cycle**.
 	1. Understand task.
