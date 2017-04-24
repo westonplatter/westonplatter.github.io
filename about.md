@@ -3,5 +3,6 @@ layout: page
 title: About
 ---
 
-Email: westonplatter "at" gmail "dot" com
+Email: Reach me on twitter, <a
+href="https://twitter.com/westonplatter">@westonplatter</a>.
 
