@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rewrite Part 1, selections"
-date: 2017-06-25 16:04:53 -0700
+date: 2017-06-26 16:04:53 -0700
 tags: rewrite
 ---
 
@@ -28,15 +28,12 @@ and beta in 6 weeks*.
 (team structure, experience level, etc). Let's assume we're set up for success
 on those fronts.
 
-Questions:
-- Do we keep the API and React frontend in the same codebase or separate?
-
 Overall:
 - Micro-service configurable
 - Planning to use DC/OS for containerized environments
 
 Frontend:
-- React configureable
+- We really like the react setup we have.
 
 Web tier:
 - JSON rendering
@@ -65,4 +62,7 @@ ORM:
 - Testing support
 - Performant (how do we measure this?)
 
-**What else am I missing?**
+*Questions:
+- Do we keep the API and React frontend in the same codebase or separate?
+- What else am I missing?
+*
