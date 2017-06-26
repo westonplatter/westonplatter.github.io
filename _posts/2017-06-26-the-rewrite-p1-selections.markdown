@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rewrite Part 1, selections"
+title: "The Rewrite, Part 1: Selections"
 date: 2017-06-26 16:04:53 -0700
 tags: rewrite
 ---
@@ -33,7 +33,7 @@ Overall:
 - Planning to use DC/OS for containerized environments
 
 Frontend:
-- We really like the react setup we have.
+- We really like the react (w/ redux + webpack) setup we have.
 
 Web tier:
 - JSON rendering
