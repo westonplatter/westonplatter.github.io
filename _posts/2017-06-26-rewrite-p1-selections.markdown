@@ -24,7 +24,7 @@ role as working within and alongside teams to move ideas from concept to reality
 in short timescales. Ideally, I'd like for us to ship alpha products in 3 weeks,
 and beta in 6 weeks*.
 
-* Side note: I believe this 3 week metric encompasses non-technical aspects
+\* Side note: I believe this 3 week metric encompasses non-technical aspects
 (team structure, experience level, etc). Let's assume we're set up for success
 on those fronts.
 
