@@ -2,12 +2,18 @@
 layout: post
 title: "The Rewrite, Part 1: Selections"
 date: 2017-06-26 16:04:53 -0700
-tags: rewrite
+tags:
+- rewrite
 ---
 
+The door is open to for a complete overhaul of the backend so I'm enumerating
+backend/API functional and behavioral needs. Here we go.
+
+<!--more-->
+
 After a year of contracting with small companies, I took a full-time position
-at [Choozle](https://choozle.com). The tech stack is a "very interesting"
-consortment of home-grown PHP with a recent and refreshing addition of React.
+at [Choozle](https://choozle.com). The tech stack is an "interesting"
+assortment of home-grown PHP with a recent and refreshing addition of React.
 
 
 For technical and business reasons, we decided to consider re-architecting the
@@ -50,7 +56,7 @@ Web tier:
 
 ORM:
 - MySQL compatible
-- Easily execute simple SQL operations (e.g., User.where(“email LIKE %?”, “gmail.com”).count)
+- Easily execute simple SQL operations (e.g., `User.where(“email LIKE %?”, “gmail.com”).count`)
 - Handles relationships
 - Handles validation
 - Handles eager joins
