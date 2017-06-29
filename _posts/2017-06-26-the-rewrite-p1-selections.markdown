@@ -7,7 +7,7 @@ tags:
 ---
 
 The door is open to for a complete overhaul of the backend so I'm enumerating
-backend/API functional and behavioral needs. Here we go.
+backend/API functional and behavioral needs.
 
 <!--more-->
 
@@ -68,7 +68,6 @@ ORM:
 - Testing support
 - Performant (how do we measure this?)
 
-*Questions:
+Questions:
 - Do we keep the API and React frontend in the same codebase or separate?
 - What else am I missing?
-*
