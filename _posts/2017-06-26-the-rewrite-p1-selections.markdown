@@ -47,6 +47,7 @@ Web tier:
 - API versioning
 - Authentication is dead-simple (session, jwt, or Oauth2)
 - Authorization is dead-simple (maybe this is an implementation issue?)
+- Easy access to HTTP header values.
 - Well supported by 3rd party libraries (ie, copy and paste S3 setup)
 - Popular on StackOverflow (let's be honest)
 - Easily integrate with selected ORM
@@ -68,6 +69,13 @@ ORM:
 - Testing support
 - Performant (how do we measure this?)
 
+Other things:
+- I can execute DB fetches in a console/shell (for example, rails console, python manage.py shell)
+- I can execute API calls in a console/shell
+- I can run a debugger in the source code
+
 Questions:
 - Do we keep the API and React frontend in the same codebase or separate?
 - What else am I missing?
+
+Edits: added other things section.
