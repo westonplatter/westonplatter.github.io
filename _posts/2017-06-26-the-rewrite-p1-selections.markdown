@@ -54,10 +54,11 @@ Web tier:
 - Built-in logging
 - Testing support
 - Able to make JSON responses performant (less than 10ms)
+- Able to run code in a terminal quickly
 
 ORM:
 - MySQL compatible
-- Easily execute simple SQL operations (e.g., `User.where(“email LIKE %?”, “gmail.com”).count`)
+- Easily execute simple SQL operations (e.g., `User.where("email LIKE %?", "test@example.com").count`)
 - Handles relationships
 - Handles validation
 - Handles eager joins
@@ -68,6 +69,7 @@ ORM:
 - Built-in logging
 - Testing support
 - Performant (how do we measure this?)
+- Able to run code in a terminal quickly
 
 Other things:
 - I can execute DB fetches in a console/shell (for example, rails console, python manage.py shell)
