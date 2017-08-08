@@ -34,9 +34,8 @@ and beta in 6 weeks*.
 (team structure, experience level, etc). Let's assume we're set up for success
 on those fronts.
 
-Overall:
-- Micro-service configurable
-- Planning to use DC/OS for containerized environments
+Deployment Environment:
+- We'll deploy dockerized apps into a Kubernetes cluster.
 
 Frontend:
 - We really like the react (w/ redux + webpack) setup we have.
