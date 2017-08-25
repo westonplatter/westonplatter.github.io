@@ -44,25 +44,25 @@ Different Types of Curiosity:
 
 - **Learning for Learning's Sake**. Search hacker news, podcasts, "getting started with X", technology specific articles (quantopian trading, tensorflow NLP or image processing, etc).
 
-  Spectrums
-    - D-high
-    - I-all
-    - C-low
+	Spectrums
+		- D-high
+		- I-all
+		- C-low
 
 - **Topical curiosity**. Survey ideas/things within a category of thought. What are the newest JS frameworks? How are companies thinking about flat organizations? How's writing about the Warren Buffet "value investing" philosophy, what's being said about it today? How is philantrophy being reinvisioned today?
 
-  Spectrums
-    - D-high
-    - I-med/high
-    - C-med
+	Spectrums
+		- D-high
+		- I-med/high
+		- C-med
 
 
 - **Comparative analysis**. How do I X with Y? How do I implement a worker pool in Ruby, Java, Go, Elixir/Erlang, Rails, Django, Heroku?
 
-  Spectrums
-    - D-low
-    - I-med/high
-    - C-high
+	Spectrums
+		- D-low
+		- I-med/high
+		- C-high
 
 
 ### Practicing within Learning Contracts
@@ -78,22 +78,27 @@ If you're planning to read a book, work with a friend, or attend an event/confer
 
 To give you a better idea of what a LC looks like, here's an example from my 2017: Aug-Oct LC.
 
-Weston's 2017: Aug-Oct Learning contract
-Topics: screen scrapping, product marketing, launching a product, learn about how to create jobs
-Friends to share with: Caleb G., Jake S., and David W.
-Items:
-- accomplishments: finish the screen scrapping agent for HTD project
-- understanding: explain how I setup js-enabled selenium to scale
-- accomplishments: apply to the Kaggle Open Source Data competition with the India data
-- accomplishments: find 5 other possible grants for the HTD project work
-- investments: send executive level summary to IJM about project
-- understanding: explain the history of India over the last 100 years
-- accomplishments: launch https://india.humantraffickingdata.org site
-- investments: attend 5 contractor focused events (meetup.com groups, webinars, conferences, etc)
-- accomplishments: launch https://www.freelance-reactjs.com
-- understanding: where and how are people looking for remote software dev work from India, Philippians, and Russia
-- investments: develop a list of 20 questions that I want to ask about how to create jobs
-- accomplishments: finish these books
-  - Not For sale (social justice + economics)
-  - The Lotus Effect (social justice + economics)
-  - Refactoring (software)
+<code>
+
+	Weston's 2017: Aug-Oct Learning contract  
+	Topics: screen scrapping, product marketing, launching a product, learn about how to create jobs  
+	Friends to share with: Caleb G., Jake S., and David W.  
+
+	Items:  
+	- accomplishments: finish the screen scrapping agent for HTD project
+	- understanding: explain how I setup js-enabled selenium to scale
+	- accomplishments: apply to the Kaggle Open Source Data competition with the India data
+	- accomplishments: find 5 other possible grants for the HTD project work
+	- investments: send executive level summary to IJM about project
+	- understanding: explain the history of India over the last 100 years
+	- accomplishments: launch https://india.humantraffickingdata.org site
+	- investments: attend 5 contractor focused events (meetup.com groups, webinars, conferences, etc)
+	- accomplishments: launch https://www.freelance-reactjs.com
+	- understanding: where and how are people looking for remote software dev work from India, Philippians, and Russia
+	- investments: develop a list of 20 questions that I want to ask about how to create jobs
+	- accomplishments: finish these books
+	 - Not For Sale (social justice + economics)
+	 - The Lotus Effect (social justice + economics)
+	 - Refactoring (software)
+
+</code>
