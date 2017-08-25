@@ -78,8 +78,7 @@ If you're planning to read a book, work with a friend, or attend an event/confer
 
 To give you a better idea of what a LC looks like, here's an example from my 2017: Aug-Oct LC.
 
-<code>
-
+```
 	Weston's 2017: Aug-Oct Learning contract
 
 	Topics: screen scrapping, product marketing, launching a product
@@ -106,4 +105,4 @@ To give you a better idea of what a LC looks like, here's an example from my 201
 	 - The Lotus Effect (social justice + economics)
 	 - Refactoring (software)
 
-</code>
+```
