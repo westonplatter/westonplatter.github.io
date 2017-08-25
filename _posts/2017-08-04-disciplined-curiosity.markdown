@@ -79,30 +79,30 @@ If you're planning to read a book, work with a friend, or attend an event/confer
 To give you a better idea of what a LC looks like, here's an example from my 2017: Aug-Oct LC.
 
 ```
-	Weston's 2017: Aug-Oct Learning contract
+Weston's 2017: Aug-Oct Learning contract
 
-	Topics: screen scrapping, product marketing, launching a product
+Topics: screen scrapping, product marketing, launching a product
 
-	Friends to share with: Caleb G., Jake S., and David W.  
+Friends to share with: Caleb G., Jake S., and David W.  
 
-	Items:  
-	- accomplishments: finish the screen scrapping agent for HTD
-	- understanding: explain how I setup js-enabled selenium to scale
-	- accomplishments: submit HTDi to Kaggle Open Source Data competition
-	- accomplishments: find 5 other possible grants for the HTD
-	- investments: send executive summary to IJM about project
-	- understanding: explain India's last 100 years
-	- accomplishments: launch https://india.humantraffickingdata.org
-	- investments: attend 5 contractor focused events
-	- accomplishments: launch https://www.freelance-reactjs.com
-	- understanding: where and how are people looking for remote devs
-	 - India
-	 - Philippians
-	 - Russia
-	- investments: ask 20 questions about building jobs
-	- accomplishments: finish these books
-	 - Not For Sale (social justice + economics)
-	 - The Lotus Effect (social justice + economics)
-	 - Refactoring (software)
+Items:  
+- accomplishments: finish the screen scrapping agent for HTD
+- understanding: explain how I setup js-enabled selenium to scale
+- accomplishments: submit HTDi to Kaggle Open Source Data competition
+- accomplishments: find 5 other possible grants for the HTD
+- investments: send executive summary to IJM about project
+- understanding: explain India's last 100 years
+- accomplishments: launch https://india.humantraffickingdata.org
+- investments: attend 5 contractor focused events
+- accomplishments: launch https://www.freelance-reactjs.com
+- understanding: where and how are people looking for remote devs
+ - India
+ - Philippians
+ - Russia
+- investments: ask 20 questions about building jobs
+- accomplishments: finish these books
+ - Not For Sale (social justice + economics)
+ - The Lotus Effect (social justice + economics)
+ - Refactoring (software)
 
 ```
