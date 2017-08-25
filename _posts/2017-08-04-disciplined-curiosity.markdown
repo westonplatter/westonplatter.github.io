@@ -80,22 +80,27 @@ To give you a better idea of what a LC looks like, here's an example from my 201
 
 <code>
 
-	Weston's 2017: Aug-Oct Learning contract  
-	Topics: screen scrapping, product marketing, launching a product, learn about how to create jobs  
+	Weston's 2017: Aug-Oct Learning contract
+
+	Topics: screen scrapping, product marketing, launching a product
+
 	Friends to share with: Caleb G., Jake S., and David W.  
 
 	Items:  
-	- accomplishments: finish the screen scrapping agent for HTD project
+	- accomplishments: finish the screen scrapping agent for HTD
 	- understanding: explain how I setup js-enabled selenium to scale
-	- accomplishments: apply to the Kaggle Open Source Data competition with the India data
-	- accomplishments: find 5 other possible grants for the HTD project work
-	- investments: send executive level summary to IJM about project
-	- understanding: explain the history of India over the last 100 years
-	- accomplishments: launch https://india.humantraffickingdata.org site
-	- investments: attend 5 contractor focused events (meetup.com groups, webinars, conferences, etc)
+	- accomplishments: submit HTDi to Kaggle Open Source Data competition
+	- accomplishments: find 5 other possible grants for the HTD
+	- investments: send executive summary to IJM about project
+	- understanding: explain India's last 100 years
+	- accomplishments: launch https://india.humantraffickingdata.org
+	- investments: attend 5 contractor focused events
 	- accomplishments: launch https://www.freelance-reactjs.com
-	- understanding: where and how are people looking for remote software dev work from India, Philippians, and Russia
-	- investments: develop a list of 20 questions that I want to ask about how to create jobs
+	- understanding: where and how are people looking for remote devs
+	 - India
+	 - Philippians
+	 - Russia
+	- investments: ask 20 questions about building jobs
 	- accomplishments: finish these books
 	 - Not For Sale (social justice + economics)
 	 - The Lotus Effect (social justice + economics)
