@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yes, everyone should so customer support"
+title: "Yes, everyone should do customer support"
 date: 2017-09-14 16:04:53 -0700
 tags:
 - reflection
