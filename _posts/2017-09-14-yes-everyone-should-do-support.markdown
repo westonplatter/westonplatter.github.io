@@ -21,8 +21,10 @@ achieving platform stability. One of the most helpful things has been being
 tied directly into Customer Support Requests and answering a few. I feel like
 I have a pulse our a users’ pain and what needs to be fixed.
 
-Somewhere I once read that everyone should do customer support. I used to have
-mixed feelings about it, and usually believed that it depends. I don’t think
-so anymore. If your product is disconnected from your org chart such that
-individual contributors cannot *see & feel* the impact of their work, then I
-argue it’s time to reorganize teams.
+Somewhere I once read that everyone should do customer support (either DHH or
+the groove help desk blog). I used to disagree, and 99% of would argue that it
+depends on your company, team, and motivations. After this week, I believe
+answering customer support is invaluable. My stance is that if your product is
+so disconnected from your org chart that individual contributors cannot
+*see & feel* the impact on users then it's time to redo the org chart to get
+closer to your customer.
