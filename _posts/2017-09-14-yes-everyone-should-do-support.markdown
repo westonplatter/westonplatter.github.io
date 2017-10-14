@@ -28,3 +28,8 @@ answering customer support is invaluable. My stance is that if your product is
 so disconnected from your org chart that individual contributors cannot
 *see & feel* the impact on users then it's time to redo the org chart to get
 closer to your customer.
+
+Edit 10/14/2017. Saw this and had to add it ... Fred Wilson's input on CEOs doing support,
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So many CEOs tell me that this is a game changer for them and their companies <a href="https://t.co/tlgW7gv2Os">https://t.co/tlgW7gv2Os</a></p>&mdash; Fred Wilson (@fredwilson) <a href="https://twitter.com/fredwilson/status/919018435647963137?ref_src=twsrc%5Etfw">October 14, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
