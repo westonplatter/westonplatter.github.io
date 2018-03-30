@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails and New Beginnings
-date: 2017-03-30 16:04:53 -0700
+date: 2018-03-29 16:04:53 -0700
 tags:
 - tooling
 ---
@@ -20,6 +20,4 @@ The high point of my time with Rails was during 2013-2014 when I attended Rails 
 
 - SQL forced me to do more with less while working with financial data without the Rails’ ActiveRecord ORM.
 
-What I learned about myself is that I was slow to move away from the Rails conventions I had
-
-All the experimenting helped me become a better learner. But along the way, I found myself wishing each tool was more like Rails. This was good and bad … good in that I appreciated the well-ordered artisan nature of rails and bad in that I missed the “unconventional” benefits of other toolsets I picked up.
+What I learned about myself is that I was slow to move away from the Rails conventions I had come to know and leverage so well. All the experimenting helped me become a better learner. But along the way, I found myself wishing each tool was more like Rails. This was good and bad … good in that I appreciated the well-ordered artisan nature of rails and bad in that I missed the “unconventional” benefits of other toolsets I picked up.
