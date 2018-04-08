@@ -12,6 +12,10 @@ Here's a list of helpful tutorials I've been digesting,
 
 React + Redux setup -  https://medium.com/@notrab/getting-started-with-create-react-app-redux-react-router-redux-thunk-d6a19259f71f
 
+Quick intro to React HOC -
+https://hackernoon.com/role-based-authorization-in-react-c70bb7641db4. Very
+helpful to see various organization for HOCs in this blog post.
+
 Django JWT API + React - https://medium.com/netscape/full-stack-django-quick-start-with-jwt-auth-and-react-redux-part-i-37853685ab57
 
 Sometime when it's more ready, I'll share the Options Trading app I'm working on.
