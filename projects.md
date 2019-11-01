@@ -5,7 +5,7 @@ title: Projects
 
 #### fast_arrow
 [https://github.com/westonplatter/fast_arrow](https://github.com/westonplatter/fast_arrow)<br/>
-A python client for trading options Robinhood's API*. The goal is to enable
+A python client for trading options with Robinhood's API. The goal is to enable
 developers to pull down options data, trading history, and execute both simple
 and complex option trades as they would through the Robinhood iOS app or
 website.
