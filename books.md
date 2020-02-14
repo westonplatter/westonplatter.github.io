@@ -3,8 +3,6 @@ layout: page
 title: Books
 ---
 
-# Books
-
 Some of my favorite books
 
 - [The Iliad](https://amzn.to/37qKeEU) & [The Odyssey](https://amzn.to/2tVRriK). Classic works. Worth reading every year.
