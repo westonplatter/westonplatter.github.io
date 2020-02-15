@@ -17,3 +17,5 @@ Some of my favorite books
 - [Moleskin Notebooks, book size](https://amzn.to/2tVRZVQ). Great for planning.
 
 - [Throat Coat Tea](https://amzn.to/39zJE9C). My go-to, in office tea.
+
+- [Reusable Produce Bags](https://amzn.to/31VpV1m). Helpful for reducing plastic waste while grabbing fruits/veggies for lunch.
