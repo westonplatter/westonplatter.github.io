@@ -1,0 +1,19 @@
+---
+layout: post
+title: Varkek
+date: 2020-05-14 16:04:53 -0700
+tags:
+- technical analysis
+- varkek
+---
+
+I have been fascinated by the capital markets since I was a kid.
+
+Creating [fast_arrow](https://github.com/westonplatter/fast_arrow) was a fun
+forray into working with financial data. But, it was just a tool to hit the
+buy or sell button. It doesn't provide any reason or give a range of confidence
+while taking a long or short opinion.
+
+So, I'm headed off to build the analytics and signal generation side of the
+toolbox. It's tool I'm calling varkek for now.
+
