@@ -40,7 +40,7 @@ for (file in csv_files) {
   parts = strsplit(file_name, ".", fixed = TRUE)
   var_name = parts[[1]][1]
 
-  # dynamically assign value to to R variaible.
+  # dynamically assign value to R variable.
   # ie, "temperature" is a R data.frame
   assign(var_name, df)
 }

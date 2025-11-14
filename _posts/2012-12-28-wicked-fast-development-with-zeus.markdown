@@ -14,7 +14,7 @@ tags:
 #### problem
 I work on a large Rails app for my full time gig. The startup time for the Rails stack is about 20 seconds (aka, 20 seconds too long). This was especially cumbersome when doing TDD-development.
 
-We tried leveraging **Spork** and **Watchr** (similar to **Rspec-Guard**) to more efficiently manage the Rails stack env. These were great tools. But our configuration required us to restart spork/watchr after we had changed a Rails environement constant or symbol (EG, Ruby class, FactoryGirl factory, spec file).
+We tried leveraging **Spork** and **Watchr** (similar to **Rspec-Guard**) to more efficiently manage the Rails stack env. These were great tools. But our configuration required us to restart spork/watchr after we had changed a Rails environment constant or symbol (EG, Ruby class, FactoryGirl factory, spec file).
 
 #### solution = zeus
 Then we found [**zeus**](https://github.com/burke/zeus).
@@ -27,7 +27,7 @@ And here's an example app.
 
 	cd git
 	gem install rails
-	gem install spree   # spree requires rmagick (gem), which requires imagamagick (os)
+	gem install spree   # spree requires rmagick (gem), which requires imagemagick (os)
 
     rails new example_zeus
     spree install example_zeus

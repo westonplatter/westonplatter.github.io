@@ -10,10 +10,10 @@ tags:
 I have been fascinated by the capital markets since I was a kid.
 
 Creating [fast_arrow](https://github.com/westonplatter/fast_arrow) was a fun
-forray into working with financial data. But, it was just a tool to hit the
+foray into working with financial data. But, it was just a tool to hit the
 buy or sell button. It doesn't provide any reason or give a range of confidence
 while taking a long or short opinion.
 
 So, I'm headed off to build the analytics and signal generation side of the
-toolbox. It's tool I'm calling varkek for now.
+toolbox. It's a tool I'm calling varkek for now.
 

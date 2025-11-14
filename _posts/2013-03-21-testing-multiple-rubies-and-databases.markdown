@@ -25,7 +25,7 @@ I think the next leap forward is to intentionally test against language versions
 
 __But, the purpose of being a developer is NOT coding or programming. Being a developer is about choosing how and when to leverage code & systems (for more on this view point, see [True Nature of Code](/blog/2013/true-nature-of-code/)).__
 
-Let's setup testing within a Rails app and configure these 9 different setps.
+Let's setup testing within a Rails app and configure these 9 different setups.
 [https://travis-ci.org/westonplatter/example_travisci_multi](https://travis-ci.org/westonplatter/example_travisci_multi)
 
 <h3 id="rspec-for-rails">Rspec testing a Rails project</h3>
@@ -46,7 +46,7 @@ I use Rspec for testing Rails applications, but your actual testing framework co
 
     # run rspec
     rake db:migrate
-    rake db:test:preapre
+    rake db:test:prepare
     rake spec
 
 
@@ -69,7 +69,7 @@ Having created a Rails project, configured your test framework, and confirmed yo
 
 <ol>
   <li>
-    Go to the Github project admin panel, click on serivce hooks section, (EG, https://github.com/GITHUB_USERNAME/REPO_NAME/settings/hooks).
+    Go to the Github project admin panel, click on service hooks section, (EG, https://github.com/GITHUB_USERNAME/REPO_NAME/settings/hooks).
   </li>
 
   <li>
@@ -154,7 +154,7 @@ Now for some Travis CI power. Let's test the Rails project against multiple data
 #### database.yml
 We need to change how the database drivers are loaded to support MRI Ruby and JRuby database connectors. In brief, the database connector is decided by the travis shell variable, ````ENV['DB']````, defaulting to ````sqlite````. Notice the  ````mysql````  connection has double nested boolean logic to change the adapter name between 'mysql' for ruby and 'mysql2' for JRuby.
 
-I copied most of this from [Matthew McEachen](http://matthew.mceachen.us/blog/about)'s [awsome travis ci post](http://matthew.mceachen.us/blog/howto-test-your-rails-application-with-travis-ci-on-different-database-engines-1220.html). We'll tweak the ````mysql```` group to account for JRuby.
+I copied most of this from [Matthew McEachen](http://matthew.mceachen.us/blog/about)'s [awesome travis ci post](http://matthew.mceachen.us/blog/howto-test-your-rails-application-with-travis-ci-on-different-database-engines-1220.html). We'll tweak the ````mysql```` group to account for JRuby.
 
     # example_travisci_multi/config/database.yml
 

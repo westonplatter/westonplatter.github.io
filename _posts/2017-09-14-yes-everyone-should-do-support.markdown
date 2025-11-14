@@ -16,10 +16,10 @@ A good friend who I’ve worked alongside for 2 of the last 4 years joined them
 as the CTO and invited to come aboard. How could I say no? Working alongside a
 buddy to restore a product I care about in “fintech” was an easy decision.
 
-During the first 2 weeks, I’ve been tasked with solving user facing issues and
+During the first 2 weeks, I've been tasked with solving user facing issues and
 achieving platform stability. One of the most helpful things has been being
 tied directly into Customer Support Requests and answering a few. I feel like
-I have a pulse our a users’ pain and what needs to be fixed.
+I have a pulse on our users' pain and what needs to be fixed.
 
 Somewhere I once read that everyone should do customer support (either DHH or
 the groove help desk blog). I used to disagree, and 99% of would argue that it
