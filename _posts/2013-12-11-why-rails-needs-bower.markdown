@@ -18,7 +18,7 @@ During the Rails 3.2.x era, I spent 3 months transforming a Rails 2 plugin  into
 
 But packaging assets in Rails Engines was also frustrating on 2 main fronts:
 1. Rails engines relied on different `jquery-rails` versions.
-2. Only the popular Frontend Tooling had Rails Engine gems, and it wasn't "dead simple" for frontend devs "engininze" their styling.
+2. Only the popular Frontend Tooling had Rails Engine gems, and it wasn't "dead simple" for frontend devs to turn their styling into an engine.
 
 __Side question:__ You might ask, "Why did you want asset files in an Engine? All you need is the js/css/images in the assets folder and you're good." From a technical perspective, yes, copy and pasting the assets into your app works, but the mere existence of these files does not explain their purpose or what other asset files may depend on them. This becomes deadly for a 10 person dev team. Unexplained architectural decisions create enormous technical debt.
 

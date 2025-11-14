@@ -97,7 +97,7 @@ Items:
 - accomplishments: launch https://www.freelance-reactjs.com
 - understanding: where and how are people looking for remote devs
  - India
- - Philippians
+ - Philippines
  - Russia
 - investments: ask 20 questions about building jobs
 - accomplishments: finish these books

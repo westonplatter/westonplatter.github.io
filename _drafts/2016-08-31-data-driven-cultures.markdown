@@ -17,7 +17,7 @@ Every organization wants to be "data-driven." But what does that actually mean?
 Being data-driven isn't:
 
 - a Tableau instance
-- meeting methodolody
+- meeting methodology
 - sales forecast methodology
 - internal dashboard KPIs
 
@@ -78,7 +78,7 @@ clients did. -->
 <!-- ### What I learned
 
 If was hired for another data consulting engagement, I'd would map out the
-entire organization, complile a google doc with everyone's defined role and
+entire organization, compile a google doc with everyone's defined role and
 responsibilities, and then describe who (at the individual and team level)
 needs what data.
 

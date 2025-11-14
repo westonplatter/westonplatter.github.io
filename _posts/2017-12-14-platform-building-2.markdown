@@ -19,7 +19,7 @@ Takeaways:
 
 ## Priorities for this week
 
-I checked Google Analytics and found that something like 8 people visited to site looking at the pandas package. I need to decide on success metrics for when people come in from google vs come from the Python Toolbox home page.
+I checked Google Analytics and found that something like 8 people visited the site looking at the pandas package. I need to decide on success metrics for when people come in from google vs come from the Python Toolbox home page.
 
 And honestly, I really haven't decided specific actions that the site is supposed to help users with. Yes, it has info on python releases, but how is that info valuable to users? I'd love to ask that question to users live on the site. That's the focus of this week.
 

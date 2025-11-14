@@ -8,13 +8,13 @@ tags:
 
 Way back in 2010 during my college years, I added functionality and fixed bugs on a Rails 2.3.x carpooling application. It was my first introduction to MVC and I loved working with Rails. I felt like I could clearly and quickly implement workflows.
 
-The high point of my time with Rails was during 2013-2014 when I attended Rails Conf and worked with a friend to implement a DevOps SasS with Ansible and Rails. Around this time, I had enough experience to see complex problem “ecosystems”. Soon after, I started playing with other languages and frameworks.
+The high point of my time with Rails was during 2013-2014 when I attended Rails Conf and worked with a friend to implement a DevOps SaaS with Ansible and Rails. Around this time, I had enough experience to see complex problem "ecosystems". Soon after, I started playing with other languages and frameworks.
 
 - Meteor caught my attention with its pub/sub and mini mongo ideas.
 
 - Go’s ultra-minimalist perspective and thoughtful standard library was a breath of fresh air.
 
-- Jupyter’s (iPython Noteboks) quick and dirty approach to data and visualizations pushed me to experiment on data faster.
+- Jupyter's (iPython Notebooks) quick and dirty approach to data and visualizations pushed me to experiment on data faster.
 
 - R’s ecosystem of packages, amazing authors, and blog posts taught me about the nature of aggregate functions.
 

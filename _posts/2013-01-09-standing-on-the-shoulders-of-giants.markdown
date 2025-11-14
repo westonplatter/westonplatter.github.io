@@ -8,7 +8,7 @@ tags:
 
 "If I have seen further it is by standing on ye sholders of Giants." - Isaac Newton
 
-These are my gaints.
+These are my giants.
 
 <!-- more -->
 

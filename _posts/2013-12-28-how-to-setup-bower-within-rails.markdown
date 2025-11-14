@@ -58,7 +58,7 @@ By default, Bower installs packages into `simple/app/bower_components`.  In my o
 }
 ```
 
-Instruct Bower to to install `jQuery`, `jquery-ujs`, and `bootstrap`.
+Instruct Bower to install `jQuery`, `jquery-ujs`, and `bootstrap`.
 ```sh
 bower install --save jquery jquery-ujs bootstrap
 ```
