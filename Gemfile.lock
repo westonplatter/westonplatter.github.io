@@ -203,6 +203,11 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer (~> 5.0)
+  jekyll (~> 4.3)
+  jekyll-archives
+  jekyll-paginate
+  jekyll-seo-tag
+  jekyll-sitemap
   jekyll-theme-chirpy (~> 7.4)
 
 BUNDLED WITH
