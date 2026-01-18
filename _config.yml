@@ -1,31 +1,167 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# The Site Configuration
 
-# Permalinks
-permalink:        pretty
-# relative_permalinks: true
+theme: jekyll-theme-chirpy
 
-# Setup
-title:            'westonplatter'
-tagline:          'data. analytics. software'
-description:      'freelance data scientist/engineer'
-url:              http://westonplatter.com
-baseurl:          /
+lang: en
 
-author:
-  name:           'Weston Platter'
-  url:            https://twitter.com/westonplatter
+timezone: America/Denver
 
-paginate:         10
+title: westonplatter
+
+tagline: software & data engineer
+
+description: Personal blog of Weston Platter - software and data engineering
+
+url: "https://westonplatter.com"
 
 github:
-  profile: https://github.com/westonplatter
+  username: westonplatter
 
-twitter:
-  profile: https://twitter.com/westonplatter
+social:
+  name: Weston Platter
+  email: westonplatter@gmail.com
+  links:
+    - https://github.com/westonplatter
+    - https://www.linkedin.com/in/westonplatter
 
-gems:
-  - jekyll-paginate
+# Site Verification Settings
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
 
-excerpt_separator: <!--more-->
+# Web Analytics Settings
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+# Page views settings
+pageviews:
+  provider:
+
+# Prefer color scheme setting
+theme_mode:
+
+# The CDN endpoint for media resources
+cdn:
+
+# The avatar on sidebar
+avatar: /assets/img/avatar.jpeg
+
+# The URL of the site-wide social preview image
+social_preview_image:
+
+# boolean type, the global switch for TOC in posts
+toc: true
+
+comments:
+  provider:
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+# Self-hosted static assets
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+# The base URL of your site
+baseurl: ""
+
+# Kramdown settings
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

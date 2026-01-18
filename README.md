@@ -1,3 +1,32 @@
+# westonplatter.com
+
+Personal blog built with Jekyll and the Hyde theme, deployed on GitHub Pages.
+
+## Local Development
+
+**Requirements:** Ruby 3.3.4 (see `.ruby-version`)
+
+```bash
+# Install dependencies
+bundle install
+
+# Run locally
+bundle exec jekyll serve
+```
+
+Site will be available at http://localhost:4000
+
+## Deployment
+
+This site uses the `github-pages` gem and deploys automatically when pushed to `master`. No GitHub Actions workflow is needed—GitHub Pages builds it natively.
+
+**Stack:**
+- Jekyll 3.10.0 (via `github-pages` gem)
+- Ruby 3.3.4
+- Hyde theme (based on Poole)
+
+---
+
 # Hyde
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
