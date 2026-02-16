@@ -1,0 +1,63 @@
+---
+layout: home
+title: ""
+---
+
+<header class="home-header">
+  <h1>Weston Platter</h1>
+  <p class="tagline">Software & data engineer</p>
+  <p class="bio">
+    I work at <a href="https://masterpoint.io/">Masterpoint Consulting</a> where we deliver Infrastructure as Code (IaC) solutions for all types of clients.
+  </p>
+  <div class="social-links">
+    <a href="https://github.com/westonplatter">GitHub</a>
+    <a href="https://www.linkedin.com/in/westonplatter">LinkedIn</a>
+    <a href="mailto:westonplatter@gmail.com">Email</a>
+  </div>
+</header>
+
+<details>
+  <summary>About me</summary>
+  <div class="details-content">
+    <p>I'm a software and data engineer interested in infrastructure, data pipelines, and building things that work reliably. I enjoy working at the intersection of software engineering and operations.</p>
+  </div>
+</details>
+
+<details>
+  <summary>What I work on</summary>
+  <div class="details-content">
+    <ul>
+      <li>Infrastructure as Code (Terraform, OpenTofu)</li>
+      <li>Cloud architecture & DevOps</li>
+      <li>Data engineering & pipelines</li>
+      <li>Open source contributions</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary>Connect</summary>
+  <div class="details-content">
+    <p>Find me on <a href="https://github.com/westonplatter">GitHub</a> or <a href="https://www.linkedin.com/in/westonplatter">LinkedIn</a>. You can also reach me at <a href="mailto:westonplatter@gmail.com">westonplatter@gmail.com</a>.</p>
+  </div>
+</details>
+
+<hr class="section-divider">
+
+<section class="writing-section">
+  <h2>Writing</h2>
+
+  {% assign posts = site.posts | sort: "date" | reverse %}
+  {% if posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in posts %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">Posts coming soon.</p>
+  {% endif %}
+</section>
