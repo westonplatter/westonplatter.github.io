@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article>
+  {% if page.title and page.title != "" %}
+  <h1 style="font-size: 20px; font-weight: 600; margin-bottom: 1.5rem;">{{ page.title }}</h1>
+  {% endif %}
+
+  {{ content }}
+</article>
