@@ -1,18 +1,14 @@
 # The Site Configuration
 
-theme: jekyll-theme-chirpy
-
 lang: en
-
 timezone: America/Denver
 
 title: westonplatter
-
-tagline: software & data engineer
-
+tagline: software & infrastructure engineer
 description: Personal blog of Weston Platter - software and data engineering
 
 url: "https://westonplatter.com"
+baseurl: ""
 
 github:
   username: westonplatter
@@ -24,75 +20,8 @@ social:
     - https://github.com/westonplatter
     - https://www.linkedin.com/in/westonplatter
 
-# Site Verification Settings
-webmaster_verifications:
-  google:
-  bing:
-  alexa:
-  yandex:
-  baidu:
-  facebook:
-
-# Web Analytics Settings
-analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-
-# Page views settings
-pageviews:
-  provider:
-
-# Prefer color scheme setting
-theme_mode:
-
-# The CDN endpoint for media resources
-cdn:
-
-# The avatar on sidebar
-avatar: /assets/img/avatar.jpeg
-
-# The URL of the site-wide social preview image
-social_preview_image:
-
-# boolean type, the global switch for TOC in posts
-toc: true
-
-comments:
-  provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
-  giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
-
-# Self-hosted static assets
-assets:
-  self_host:
-    enabled:
-    env:
-
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-    deny_paths:
-
-paginate: 10
-
-# The base URL of your site
-baseurl: ""
+plugins:
+  - jekyll-sitemap
 
 # Kramdown settings
 kramdown:
@@ -118,8 +47,6 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true
-      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -135,15 +62,6 @@ defaults:
 sass:
   style: compressed
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
-
 exclude:
   - "*.gem"
   - "*.gemspec"
@@ -156,12 +74,3 @@ exclude:
   - CLAUDE.md
   - Gemfile
   - Gemfile.lock
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+  <header style="margin-bottom: 2rem;">
+    <h1 style="font-size: 20px; font-weight: 600; margin-bottom: 0.5rem;">{{ page.title }}</h1>
+    <time style="color: var(--text-muted); font-size: 13px;" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+    {% if page.tags.size > 0 %}
+    <span style="color: var(--text-muted); font-size: 13px;">
+      &middot; {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </span>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  <nav style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 13px;">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+  </nav>
+</article>

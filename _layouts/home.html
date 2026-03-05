@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<section style="margin-top: 2.5rem;">
+  <h2 style="font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Recent Posts</h2>
+  <ul style="list-style: none; margin: 0; padding: 0;">
+    {% for post in site.posts limit:20 %}
+    <li style="margin-bottom: 0.4rem; display: flex; gap: 1.25rem; align-items: baseline;">
+      <time style="color: var(--text-muted); font-size: 13px; flex-shrink: 0;" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

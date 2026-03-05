@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != "" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="/favicon.ico">
+  {% if page.url == "/" %}<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/atom.xml' | absolute_url }}">{% endif %}
+  <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --bg: #f1f2f4;
+      --bg-alt: #e7e9ed;
+      --text: #2f3338;
+      --text-muted: #6f7782;
+      --accent: #4f5966;
+      --border: #cdd2d8;
+      --link: #4a5563;
+      --link-hover: #2f3338;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      border-bottom-color: var(--text);
+    }
+
+    .site-header {
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-header .site-title {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .site-header .site-title a {
+      color: var(--text);
+      border: none;
+    }
+
+    .site-header nav {
+      margin-top: 0.5rem;
+    }
+
+    .site-header nav a {
+      color: var(--text-muted);
+      margin-right: 1.25rem;
+      font-size: 13px;
+      border: none;
+    }
+
+    .site-header nav a:hover {
+      color: var(--text);
+    }
+
+    .site-footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* Post content styles */
+    .content h1 { font-size: 20px; font-weight: 600; margin: 2rem 0 1rem; }
+    .content h2 { font-size: 16px; font-weight: 600; margin: 1.75rem 0 0.75rem; }
+    .content h3 { font-size: 14px; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+    .content p { margin-bottom: 1rem; }
+    .content ul, .content ol { margin: 0 0 1rem 1.5rem; }
+    .content li { margin-bottom: 0.25rem; }
+    .content blockquote {
+      border-left: 2px solid var(--border);
+      padding-left: 1rem;
+      color: var(--text-muted);
+      margin: 1rem 0;
+    }
+
+    .content pre {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .content code {
+      font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      background: var(--bg-alt);
+      padding: 0.15rem 0.35rem;
+      font-size: 13px;
+    }
+
+    .content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    .content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 13px;
+    }
+
+    .content th, .content td {
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .content th {
+      background: var(--bg-alt);
+      font-weight: 600;
+    }
+
+    /* Syntax highlighting - minimal */
+    .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp,
+    .highlight .kr, .highlight .kt { color: #4f5966; font-weight: 600; }
+    .highlight .s, .highlight .s1, .highlight .s2, .highlight .se { color: #5f6771; }
+    .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #8a9098; }
+    .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo { color: #56606b; }
+    .highlight .na, .highlight .nb { color: #657180; }
+    .highlight .o, .highlight .p { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-title"><a href="/">{{ site.title }}</a></div>
+      <nav>
+        <a href="/">posts</a>
+        <a href="/about/">about</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://github.com/westonplatter">github</a> &middot;
+      <a href="https://www.linkedin.com/in/westonplatter">linkedin</a>
+    </footer>
+  </div>
+</body>
+</html>
