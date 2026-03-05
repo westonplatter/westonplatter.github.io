@@ -5,9 +5,7 @@ permalink: /about/
 order: 4
 ---
 
-I'm Weston Platter — software and infrastructure engineer at [Masterpoint Consulting](https://masterpoint.io/).
-
-I work on Infrastructure as Code solutions, helping clients develop and deploy at scale. I have a background in quantitative development and maintain interests in options, futures, and volatility risk data.
+Yo, welcome to my page on the internet. I work as a software and infrastructure engineer at [Masterpoint Consulting](https://masterpoint.io/), where we deliver Infrastructure as Code solutions (IAC) at scale. I enjoy crafting code and solutions for the specific problem at hand. I worked for a season as a quant developer and still enjoy working with options, futures, volatility risk data.
 
 ## Connect
 
