@@ -6,7 +6,7 @@ title: ""
 <h2 style="font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin: 2rem 0 0.75rem;">Projects</h2>
 
 **Quant Finance**
-- [nextgentrader](https://github.com/westonplatter/nextgentrader) — automated multi-strategy trading across equities, commodities, and volatility
+- [ngv-trader](https://github.com/westonplatter/ngv-trader) — automated multi-strategy trading across equities, commodities, and volatility
 - [ib_insync_options](https://github.com/westonplatter/ib_insync_options) — option chain data retrieval from Interactive Brokers
 
 **Infrastructure**
