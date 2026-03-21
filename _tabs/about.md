@@ -11,4 +11,3 @@ I work as a software and infrastructure engineer at [Masterpoint Consulting](htt
 
 - [GitHub](https://github.com/westonplatter)
 - [LinkedIn](https://www.linkedin.com/in/westonplatter)
-- [Email](mailto:westonplatter@gmail.com)
