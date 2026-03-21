@@ -18,7 +18,7 @@ Site will be available at http://localhost:4000
 
 ## Deployment
 
-This site uses the `github-pages` gem and deploys automatically when pushed to `master`. No GitHub Actions workflow is needed—GitHub Pages builds it natively.
+This site uses the `github-pages` gem and deploys automatically when pushed to `main`. No GitHub Actions workflow is needed—GitHub Pages builds it natively.
 
 **Stack:**
 - Jekyll 3.10.0 (via `github-pages` gem)
