@@ -18,10 +18,10 @@ Site will be available at http://localhost:4000
 
 ## Deployment
 
-This site uses the `github-pages` gem and deploys automatically when pushed to `main`. No GitHub Actions workflow is needed—GitHub Pages builds it natively.
+This site deploys with the current GitHub Pages workflow model. Pushes to `main` trigger the Pages workflow in [`.github/workflows/jekyll.yml`](/Users/weston/clients/westonplatter/westonplatter.github.io/.github/workflows/jekyll.yml), which builds the site and deploys it to GitHub Pages.
 
 **Stack:**
-- Jekyll 3.10.0 (via `github-pages` gem)
+- Jekyll 4.3.x
 - Ruby 3.3.4
 - Hyde theme (based on Poole)
 
