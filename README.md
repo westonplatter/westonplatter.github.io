@@ -23,8 +23,8 @@ bundle exec jekyll build
 
 ## Stack
 
-- Jekyll 4.3
-- Ruby 3.3
+- Jekyll 4.4
+- Ruby 3.4
 - Custom layouts under `_layouts/` (no upstream theme)
 - `jekyll-sitemap` plugin
 - `html-proofer` for link checks (test group)
