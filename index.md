@@ -8,7 +8,8 @@ title: ""
 **Quant Finance**
 - [ngv-trader](https://github.com/westonplatter/ngv-trader) — automated multi-strategy trading across equities, commodities, and volatility
 - [ngv_opx](https://github.com/westonplatter/ngv_opx) - Rust CPU/GPU library for calculating Option prices and IVs w/ Python & JS clients.
-- [ib_insync_options](https://github.com/westonplatter/ib_insync_options) — option chain data retrieval from Interactive Brokers
+- [ib_insync_options](https://github.com/westonplatter/ib_insync_options) — Option chain data retrieval from Interactive Brokers
+- [ngv_reports_ibkr](https://github.com/westonplatter/ngv_reports_ibkr) -- Interactive Brokers client for Flex Statements (custom reports).
 
 **Infrastructure**
 - [postgres-config-dbs-users-roles](https://github.com/westonplatter/terraform-postgres-config-dbs-users-roles) — Terraform module for Postgres databases, roles, and users
