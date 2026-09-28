@@ -7,12 +7,9 @@ title: ""
 
 **Quant Finance**
 - [ngv-trader](https://github.com/westonplatter/ngv-trader) — automated multi-strategy trading across equities, commodities, and volatility
+- [ngv_opx](https://github.com/westonplatter/ngv_opx) - Rust CPU/GPU library for calculating Option prices and IVs w/ Python & JS clients.
 - [ib_insync_options](https://github.com/westonplatter/ib_insync_options) — option chain data retrieval from Interactive Brokers
 
 **Infrastructure**
 - [postgres-config-dbs-users-roles](https://github.com/westonplatter/terraform-postgres-config-dbs-users-roles) — Terraform module for Postgres databases, roles, and users
 - [googleworkspace-users-groups-automation](https://github.com/masterpointio/terraform-googleworkspace-users-groups-automation) - Terraform module to manage google workspaces
-
-**AI Tooling**
-- [aps](https://github.com/westonplatter/aps) — Rust-based tool for organizing AGENTS.md files, Agent Skills, etc
-- [agentically](https://github.com/westonplatter/agentically) — collection of Agentic prompts for delegating work to LLMs
