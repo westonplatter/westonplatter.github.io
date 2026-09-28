@@ -130,6 +130,79 @@
       padding: 0;
     }
 
+    /* Rouge line-number table: undo the generic pre/table styles */
+    .content .rouge-table { width: auto; margin: 0; border: none; font-size: inherit; }
+    .content .rouge-table td { padding: 0; border: none; vertical-align: top; }
+    .content .rouge-table pre {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      font-size: inherit;
+    }
+    .content .rouge-table .rouge-gutter {
+      padding-right: 1rem;
+      color: #9aa1a9;
+      text-align: right;
+      user-select: none;
+    }
+
+    /* Code blocks with toolbar (wrap + copy), added by the script below */
+    .content .codebox { margin: 1rem 0; }
+    .content .codebox pre.highlight { margin: 0; }
+    .content .code-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.4rem 0.25rem 0.75rem;
+      background: #dde0e5;
+      border: 1px solid var(--border);
+      border-bottom: none;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .content .code-toolbar .code-lang { margin-right: auto; }
+    .content .code-toolbar button {
+      font: inherit;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.1rem 0.6rem;
+      cursor: pointer;
+    }
+    .content .code-toolbar button[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .content .code-toolbar button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    .content .codebox.is-wrapped pre,
+    .content .codebox.is-wrapped code {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .content .codebox.is-wrapped .rouge-gutter { display: none; }
+    .content .code-line { display: block; }
+    /* Hanging indent: continuation lines sit 4 characters in from the line's own indent */
+    .content .codebox.is-wrapped .code-line {
+      padding-left: calc(var(--indent, 0) * 1ch + 4ch);
+      text-indent: calc(var(--indent, 0) * -1ch - 4ch);
+    }
+
+    /* Let long code blocks spread past the text column on wide screens */
+    @media (min-width: 800px) {
+      .content .codebox.is-wide {
+        --code-width: min(1000px, calc(100vw - 3rem));
+        width: var(--code-width);
+        margin-left: calc((100% - var(--code-width)) / 2);
+      }
+    }
+
     .content img {
       max-width: 100%;
       height: auto;
@@ -190,6 +263,87 @@
     </footer>
   </div>
   <script>
+    (function () {
+      // Rebuild a code element as one block span per line, so wrapped lines can get a hanging indent.
+      function splitLines(code) {
+        var lines = [[]];
+        Array.prototype.slice.call(code.childNodes).forEach(function (node) {
+          node.textContent.split("\n").forEach(function (part, i) {
+            if (i > 0) lines.push([]);
+            if (!part) return;
+            var piece = node.cloneNode(false);
+            piece.textContent = part;
+            lines[lines.length - 1].push(piece);
+          });
+        });
+        if (lines.length > 1 && !lines[lines.length - 1].length) lines.pop();
+        code.textContent = "";
+        lines.forEach(function (pieces) {
+          var line = document.createElement("span");
+          line.className = "code-line";
+          pieces.forEach(function (piece) { line.appendChild(piece); });
+          var indent = line.textContent.match(/^ */)[0].length;
+          if (indent) line.style.setProperty("--indent", indent);
+          if (!pieces.length) line.textContent = " ";
+          code.appendChild(line);
+        });
+      }
+
+      var narrow = window.matchMedia("(max-width: 699px)").matches;
+
+      document.querySelectorAll(".content div.highlighter-rouge").forEach(function (block) {
+        var pre = block.querySelector("pre.highlight");
+        if (!pre) return;
+        var source = block.querySelector(".rouge-code pre") || pre.querySelector("code") || pre;
+        var lang = (block.className.match(/language-(\S+)/) || [])[1];
+        var text = source.textContent.replace(/\n$/, "");
+        splitLines(source);
+
+        var box = document.createElement("div");
+        box.className = "codebox";
+        var toolbar = document.createElement("div");
+        toolbar.className = "code-toolbar";
+        toolbar.innerHTML =
+          '<span class="code-lang">' + (lang && lang !== "plaintext" ? lang : "") + "</span>" +
+          '<button type="button" class="code-wrap" aria-pressed="false">Wrap</button>' +
+          '<button type="button" class="code-copy">Copy</button>';
+        block.parentNode.insertBefore(box, block);
+        box.appendChild(toolbar);
+        box.appendChild(block);
+
+        // Only spread past the text column when the code doesn't fit in it.
+        if (pre.scrollWidth > pre.clientWidth) box.classList.add("is-wide");
+
+        var wrapButton = toolbar.querySelector(".code-wrap");
+        function setWrapped(on) {
+          box.classList.toggle("is-wrapped", on);
+          wrapButton.setAttribute("aria-pressed", on ? "true" : "false");
+        }
+        setWrapped(narrow);
+        wrapButton.addEventListener("click", function () {
+          setWrapped(!box.classList.contains("is-wrapped"));
+        });
+
+        var copyButton = toolbar.querySelector(".code-copy");
+        function flash(label) {
+          copyButton.textContent = label;
+          setTimeout(function () { copyButton.textContent = "Copy"; }, 1500);
+        }
+        function selectCode() {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          flash("Selected");
+        }
+        copyButton.addEventListener("click", function () {
+          if (!navigator.clipboard) return selectCode();
+          navigator.clipboard.writeText(text).then(function () { flash("Copied"); }, selectCode);
+        });
+      });
+    })();
+
     (function () {
       if (!("serviceWorker" in navigator)) return;
 
