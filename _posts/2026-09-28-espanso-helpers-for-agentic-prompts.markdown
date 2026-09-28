@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Espanso helpers for coding agents"
+title: "Espanso helpers for agentic prompts"
 date: 2026-09-28 07:00:00 -0600
 tags:
 - agentic-coding
